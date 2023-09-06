@@ -48,6 +48,19 @@
 		.back {
 		  transform: rotateY( 180deg );
 		}
+
+		@media (max-width: 500px) {
+			.card, .content, .front, .back {
+				width: 100%;
+				height: auto;
+				position: absolute;
+    	  		top:0;
+    	  		bottom: 0;
+    	  		left: 0;
+    	  		right: 0;
+    	  		margin: auto;
+			}
+		}
 	</style>
 </head>
 <body>
