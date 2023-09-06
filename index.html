@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Friendsgiving 2023</title>
+
+	<style type="text/css">
+		
+		body {
+		  background: #ccc;
+		}
+
+		.card {
+		  width: 500px;
+		  height: 315px;
+		  perspective: 500px;
+		  position: absolute;
+    	  top:0;
+    	  bottom: 0;
+    	  left: 0;
+    	  right: 0;
+    	  margin: auto;
+		}
+
+		.content {
+		  transition: transform 1s;
+		  transform-style: preserve-3d;
+		  width: 500px;
+		  height: 315px;
+		}
+
+		.card:hover .content {
+		  transform: rotateY( 180deg ) ;
+		  transition: transform 0.5s;
+		}
+
+		.front, .back {
+		  position: absolute;
+		  height: 100%;
+		  width: 100%;
+		  backface-visibility: hidden;
+		  width: 500px;
+		  height: auto;
+		  border-radius: 20px;
+		}
+
+		.back {
+		  transform: rotateY( 180deg );
+		}
+	</style>
+</head>
+<body>
+
+	<div class="card">
+
+	  <div class="content">
+
+	      <img class="front" src="front.png" alt="front">
+	      <img class="back" src="back.png" alt="back">
+
+	  </div>
+
+	</div>
+
+</body>
+</html>
