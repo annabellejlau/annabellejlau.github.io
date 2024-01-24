@@ -3,78 +3,62 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Friendsgiving 2023</title>
-
+	<title>Daisy Lau | Student Page</title>
 	<style type="text/css">
-		
 		body {
-		  background: #ccc;
+			background-color: #FFD4DB;
 		}
 
-		.card {
-		  width: 500px;
-		  height: 315px;
-		  perspective: 500px;
-		  position: absolute;
-    	  top:0;
-    	  bottom: 0;
-    	  left: 0;
-    	  right: 0;
-    	  margin: auto;
+		span {
+			background-color: #EEB5EB;
+			color: #C26DBC;
 		}
 
-		.content {
-		  transition: transform 1s;
-		  transform-style: preserve-3d;
-		  width: 500px;
-		  height: 315px;
+		img {
+			width: 400px;
+			height: auto;
 		}
 
-		.card:hover .content {
-		  transform: rotateY( 180deg ) ;
-		  transition: transform 0.5s;
-		}
-
-		.front, .back {
-		  position: absolute;
-		  height: 100%;
-		  width: 100%;
-		  backface-visibility: hidden;
-		  width: 500px;
-		  height: auto;
-		  border-radius: 20px;
-		}
-
-		.back {
-		  transform: rotateY( 180deg );
-		}
-
-		@media (max-width: 500px) {
-			.card, .content, .front, .back {
-				width: 100%;
-				height: auto;
-				position: absolute;
-    	  		top:0;
-    	  		bottom: 0;
-    	  		left: 0;
-    	  		right: 0;
-    	  		margin: auto;
-			}
+		hr {
+			border-color: #EEB5EB;
 		}
 	</style>
 </head>
 <body>
 
-	<div class="card">
+	<h1>Daisy Lau's Student Page</h1>
 
-	  <div class="content">
+	<p>Instagram: <a href="https://www.instagram.com/daisydacockapoo/" target="_blank">@daisydacockapoo</a></p>
 
-	      <img class="front" src="img/front.png" alt="front">
-	      <img class="back" src="img/back.png" alt="back">
+	<p>Favorite Color: <span>Lilac</span></p>
 
-	  </div>
+	<p>Favorite Website: <a href="https://www.instagram.com/daisydacockapoo/" target="_blank">Instagram</a></p>
 
-	</div>
+	<p>Favorite Activity:</p>
+	<img src="img/sleep.jpg" alt="sleep">
+	<br>
+	<caption><em>I sleep a lot when I'm not bothering my pawrents.</em></caption>
+
+	<p>Spring 2024 Schedule</p>
+	<ul>
+		<li>ITP 104</li>
+		<li>ITP 301</li>
+		<li>ITP 304</li>
+		<li>ITP 460</li>
+	</ul>
+
+	<hr>
+
+	<h2>Assignments</h2>
+	<ul>
+		<li><a href="#">Assignment 1: Web Resume</a></li>
+		<li><a href="#">Assignment 2: Interests Page</a></li>
+	</ul>
+
+	<h2>Lab</h2>
+	<ul>
+		<li><a href="#">Lab 2: Student Page</a></li>
+	</ul>
 
 </body>
 </html>
